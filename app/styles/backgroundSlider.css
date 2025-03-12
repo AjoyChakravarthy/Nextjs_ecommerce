@@ -1,0 +1,23 @@
+@keyframes slide {
+   10% {
+      background-image: url("../../public/background/bg_1.jpeg");
+   }
+   50% {
+      background-image: url("../../public/background/bg_2.jpeg");
+   }
+   100% {
+      background-image: url("../../public/background/bg_3.jpeg");
+   }
+   /* 100% {
+      background-image: url("/../../public/background/bg_1.jpeg");
+   } */
+}
+
+.background-slider {
+   animation: slide 15s ease infinite;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 700px;
+   width: 700px;
+}
