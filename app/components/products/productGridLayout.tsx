@@ -20,7 +20,7 @@ const ProductGridLayout: React.FC<ProductGridLayoutProps> = ({
    onProductClick,
 }) => {
    return (
-      <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 container mx-auto bg-white">
+      <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 container mx-auto bg-inherit">
          {products.map((product) => (
             <ProductCard
                key={product.id}

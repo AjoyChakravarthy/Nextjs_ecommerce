@@ -13,7 +13,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
    return (
       <form
          onSubmit={handleSearch}
-         className="flex gap-2 border-none bg-[#737373] w-full h-full p-3"
+         className="flex gap-2 border-none bg-[#F1F0E8] w-full h-full p-3"
       >
          <input
             type="text"
