@@ -7,7 +7,7 @@ import StarRating from "./starRating";
 interface ProductCardProps {
    id: number;
    title: string;
-   price: string;
+   price: number;
    thumbnail: string;
    index: number;
    rating: number;
@@ -27,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
          onClick={onClick}
          key={id}
          className={`relative flex flex-col items-center gap-0 md:gap-4 p-2 cursor-pointer justify-between 
-             h-30 md:h-[420px] row-span-2 col-span  drop-shadow-lg bg-[#EEEEEE]`}
+             h-fit md:h-[420px] row-span-2 col-span  drop-shadow-lg bg-[#EEEEEE]`}
       >
          {" "}
          <div className="absolute inset-0 bg-slate-700 opacity-0 hover:opacity-10 transition-opacity duration-300  z-10 "></div>

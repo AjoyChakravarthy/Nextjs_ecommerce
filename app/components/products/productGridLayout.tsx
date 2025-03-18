@@ -4,7 +4,7 @@ import ProductCard from "./productCard";
 interface Product {
    id: number;
    title: string;
-   price: string;
+   price: number;
    thumbnail: string;
    rating: number;
    index: number;

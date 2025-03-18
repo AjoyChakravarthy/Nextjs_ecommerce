@@ -6,7 +6,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 interface ProductCardMIniProps {
    id: number;
    title: string;
-   price: string;
+   price: number;
    thumbnail: string;
    index: number;
    rating: number;

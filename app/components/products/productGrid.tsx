@@ -7,7 +7,7 @@ import ProductGridLayout from "./productGridLayout";
 interface Product {
    id: number;
    title: string;
-   price: string;
+   price: number;
    thumbnail: string;
    rating: number;
    index: number;

@@ -5,7 +5,7 @@ interface Product {
    id: number;
    title: string;
    thumbnail?: string;
-   price?: string;
+   price?: number;
    rating?: number;
 }
 export const useSearch = () => {
