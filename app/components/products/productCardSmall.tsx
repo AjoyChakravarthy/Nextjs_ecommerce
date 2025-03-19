@@ -2,16 +2,7 @@ import Image from "next/legacy/image";
 import React from "react";
 import StarRating from "./starRating";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-
-interface ProductCardMIniProps {
-   id: number;
-   title: string;
-   price: number;
-   thumbnail: string;
-   index: number;
-   rating: number;
-   onClick: () => void;
-}
+import { ProductCardMIniProps } from "@/app/lib/definition";
 
 export const ProductCardMini: React.FC<ProductCardMIniProps> = ({
    id,

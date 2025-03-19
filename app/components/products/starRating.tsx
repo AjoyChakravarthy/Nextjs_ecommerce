@@ -1,8 +1,5 @@
+import { StarRatingProps } from "@/app/lib/definition";
 import React from "react";
-
-interface StarRatingProps {
-   rating: number;
-}
 
 const StarRating: React.FC<StarRatingProps> = ({ rating }) => {
    const stars = [];

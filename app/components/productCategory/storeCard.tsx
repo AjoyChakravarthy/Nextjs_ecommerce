@@ -4,12 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
+import { StoreCardProps } from "@/app/lib/definition";
 
-interface StoreCardProps {
-   name: string;
-   image: string;
-   description: string;
-}
 const StoreCard: React.FC<StoreCardProps> = ({ name, image, description }) => {
    return (
       <Card

@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { getProductsBySearch } from "../lib/data";
+import { Product } from "../lib/definition";
 
-interface Product {
-   id: number;
-   title: string;
-   thumbnail?: string;
-   price?: number;
-   rating?: number;
-}
 export const useSearch = () => {
    const [searchQuery, setSearchQuery] = useState("");
    const [searchResults, setSearchResults] = useState<

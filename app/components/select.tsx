@@ -4,13 +4,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-
-interface BasicSelectProps {
-   label: string | number;
-   value: string | number;
-   options: { value: string | number; label: string | number }[];
-   onChange: (value: string | number) => void;
-}
+import { BasicSelectProps } from "../lib/definition";
 
 const BasicSelect: React.FC<BasicSelectProps> = ({
    label,

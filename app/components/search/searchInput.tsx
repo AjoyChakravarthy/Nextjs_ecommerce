@@ -1,9 +1,5 @@
+import { SearchInputProps } from "@/app/lib/definition";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-interface SearchInputProps {
-   searchQuery: string;
-   setSearchQuery: (query: string) => void;
-   handleSearch: (event: React.FormEvent) => void;
-}
 
 const SearchInput: React.FC<SearchInputProps> = ({
    searchQuery,

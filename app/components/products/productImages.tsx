@@ -1,10 +1,5 @@
+import { ProductImagesProps } from "@/app/lib/definition";
 import Image from "next/legacy/image";
-
-interface ProductImagesProps {
-   thumbnail: string | null;
-   images: string[] | null;
-   title: string;
-}
 
 const ProductImages: React.FC<ProductImagesProps> = ({
    thumbnail,

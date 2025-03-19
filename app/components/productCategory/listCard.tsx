@@ -1,11 +1,8 @@
 "use client";
+import { ListCardProps } from "@/app/lib/definition";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-interface ListCardProps {
-   title: string;
-   slug: string;
-}
 const ListCard: React.FC<ListCardProps> = ({ title, slug }) => {
    const router = useRouter();
    const handleClick = () => {

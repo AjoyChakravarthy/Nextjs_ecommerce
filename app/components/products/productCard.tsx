@@ -3,16 +3,7 @@ import Image from "next/legacy/image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import StarRating from "./starRating";
-
-interface ProductCardProps {
-   id: number;
-   title: string;
-   price: number;
-   thumbnail: string;
-   index: number;
-   rating: number;
-   onClick: () => void;
-}
+import { ProductCardProps } from "@/app/lib/definition";
 
 const ProductCard: React.FC<ProductCardProps> = ({
    id,

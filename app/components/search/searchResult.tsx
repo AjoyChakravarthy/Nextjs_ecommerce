@@ -5,18 +5,7 @@ import { ProductCardMini } from "../products/productCardSmall";
 import { useRouter } from "next/navigation";
 import CancelIcon from "@mui/icons-material/Cancel";
 import TuneIcon from "@mui/icons-material/Tune";
-
-interface SearchResultProps {
-   searchResults: {
-      id: number;
-      index: number;
-      title: string;
-      thumbnail: string;
-      price: string;
-      rating: number;
-   }[];
-   onClose: () => void;
-}
+import { SearchResultProps } from "@/app/lib/definition";
 
 export const SearchResult: React.FC<SearchResultProps> = ({
    searchResults,

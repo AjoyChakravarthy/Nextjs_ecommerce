@@ -6,28 +6,7 @@ import ProductImages from "@/app/components/products/productImages";
 import { useParams } from "next/navigation";
 import ProductInfo from "@/app/components/products/productInfo";
 import ProductReviews from "@/app/components/products/productReviews";
-
-interface Review {
-   rating: number;
-   comment: string;
-   date: string;
-   reviewerName: string;
-   reviewerEmail: string;
-}
-interface Product {
-   id: number;
-   title: string;
-   thumbnail: string;
-   images: string[];
-   price: string;
-   description: string;
-   rating: number;
-   category: string;
-   brand: string;
-   warrantyInformation: string;
-   returnPolicy: string;
-   reviews: Review[];
-}
+import { ProductDetsailsProps } from "@/app/lib/definition";
 
 const quantityOptions = [
    { value: 1, label: 1 },
@@ -44,7 +23,7 @@ const sizeOptions = [
 
 export default function ProductDetails() {
    const params = useParams();
-   const [product, setProduct] = useState<Product | null>(null);
+   const [product, setProduct] = useState<ProductDetsailsProps | null>(null);
    const [selectQuantity, setSelectQuantity] = useState<number | string>("");
    const [selectSize, setSelectSize] = useState<number | string>("");
    const [error, setError] = useState<string | null>(null);

@@ -1,20 +1,7 @@
+import { ProductInfoProps } from "@/app/lib/definition";
 import PrimaryButton from "../button";
 import BasicSelect from "../select";
 import StarRating from "./starRating";
-
-interface ProductInfoProps {
-   title: string;
-   price: string;
-   rating: number;
-   category: string;
-   description: string;
-   selectQuantity: string | number;
-   selectSize: string | number;
-   quantityOptions: { value: string | number; label: string | number }[];
-   sizeOptions: { value: string | number; label: string | number }[];
-   onQuantityChange: (value: string | number) => void;
-   onSizeChange: (value: string | number) => void;
-}
 
 const ProductInfo: React.FC<ProductInfoProps> = ({
    title,

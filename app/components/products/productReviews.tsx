@@ -1,12 +1,5 @@
+import { Review } from "@/app/lib/definition";
 import StarRating from "./starRating";
-
-interface Review {
-   rating: number;
-   comment: string;
-   date: string;
-   reviewerName: string;
-   reviewerEmail: string;
-}
 
 interface ProductReviewProps {
    reviews: Review[];
